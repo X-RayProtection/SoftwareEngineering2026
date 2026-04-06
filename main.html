@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Todo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <h1>My Tasks</h1>
+            <p id="task-count">0 tasks</p>
+        </header>
+
+        <form id="todo-form">
+            <div class="input-group">
+                <input type="text" id="todo-input" placeholder="What needs to be done?" autocomplete="off" required>
+                <button type="submit" id="add-btn">
+                    <i class="ri-add-line"></i>
+                </button>
+            </div>
+        </form>
+
+        <ul id="todo-list" class="todo-list">
+            <!-- Todo items will be injected here via JS -->
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
